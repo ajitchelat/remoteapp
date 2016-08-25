@@ -1,2 +1,0 @@
-remoteapp-anyapp.md
-remoteapp-tutorial-o365anywhere.md

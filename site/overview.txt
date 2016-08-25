@@ -1,6 +1,0 @@
-azure-subscription-service-limits.md
-remoteapp-faq.md
-remoteapp-licensing.md
-remoteapp-roadmap.md
-remoteapp-whatis.md
-remoteapp-whatsnew.md
