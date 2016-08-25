@@ -3,7 +3,7 @@ site_description: Documentation for Azure RemoteApp
 theme: readthedocs
 
 pages:
-- Home: 'README.md'
+- Home: 'index.md'
 - Overview:
     - What is Azure RemoteApp?: 'remoteapp-whatis.md'
     - How does licensing work?: 'remoteapp-licensing.md'
