@@ -5,4 +5,4 @@ This site contains documentation for Azure RemoteApp. This documentation has bee
 !!! danger "Important"
 	Links to topics that are not part of the Azure RemoteApp documentation will not work in this build.
 !!! tip "Note"
-	[AZURE.IMPORTANT], [AZURE.NOTE] and [AZURE.TIP] are syntaxes used by Azure for note texts and admonitions. These syntaxes are theme-specific and will not render content following these syntaxes as admonitions. 
+	[AZURE.IMPORTANT], [AZURE.NOTE] and [AZURE.TIP] are syntaxes used by Azure for note texts and admonitions. These syntaxes are theme-specific and will not render admonitions correctly. 
