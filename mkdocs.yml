@@ -1,6 +1,8 @@
 site_name: Azure RemoteApp
 site_description: Documentation for Azure RemoteApp
 theme: readthedocs
+markdown_extensions:
+ - admonition
 
 pages:
 - Home: 'index.md'
