@@ -3,7 +3,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
@@ -11,7 +10,8 @@
   <title>What is in the template image? - Azure RemoteApp</title>
   
 
-  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="shortcut icon" href="
+https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
 
   
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
+  <link rel="stylesheet" href="../css/override.css" type="text/css" />
 
   
   <script>
@@ -31,21 +32,43 @@
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="../js/highlight.pack.js"></script>
-  <script src="../js/theme.js"></script> 
+  <script src="../js/theme.js"></script>
+  <script src="../js/nav.js"></script> 
 
   
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
+	<div data-toggle="wy-nav-shift" class="header-top">
+		<div class="header-top-left">
+			<a href="http://www.citrix.com" class="logo-position"><img height="60" src="https://thumbnail-ec2.sharefile.com/thumbnail.aspx?encparams=ypL2J0l-In6gqXJ7yeyKP8A1rqwKMH-C8-nfkJcHJNIN7Y0yZiJsYOcUe-uc0YeZzWLQSFSd1FnuMHPa30XSSINHuGOA8nvvnBT5WmjGlKvd5mxJ4IfT7iTVyHELwhWQiNCznPCiIFyhkA78uKX77PlU2iyhM4YdRM1NKabBe-4wXuiFJsbtAxyJ2UukO_E2ZSf1W3l75Dw8G0zflVkT-EFqyx1zSGId0qzLjm6nzJ8dA9zo-1AJzUisdzmGMzHOq_LMsOWyaalvmcWvCkl-q10GBSbfekfTIFW9LpZNYjkLNSnK8rcwNjWVr_jYayrGjIj2e5dDIMiDj3NRvW51AvHRjxYH9xRRRtY$" target="_blank" class="logo-citrix"><span style="color:#fff;font-size: 20px;position: relative;top:4px;left: 5px">SDK Reference</span></a>
+		</div>
+		<div class="header-top-right">
+			<ul>
+			<!--	<li class="list-inline home"><a href="..">HOME</a></li>
+				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
+		    <li class="list-inline support">			  
+			<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+			<div class="input-group add-on">
+			<input type="text" name="q" placeholder="Search docs" /><span class="input-group-addon"><a onClick="document.forms['rtd-search-form'].submit();"><i class="fa fa-search"></i></a></span>
+			</div>
+			</form>
+			</li>
+				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
+			</ul>
+			
+
+		</div>
+	</div>
   <div class="wy-grid-for-nav">
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Azure RemoteApp</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<i class="fa fa-search"></i>
     <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
@@ -54,405 +77,447 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
         <ul class="current">
           
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="..">Home</a>
-        
+            <li><ul class="subnav">
+    <li class="">
+        <a class="" href=".." id="Home" style="font-size:95%;font-weight:bold;">Home</a>
     </li>
+    
+    <li class="paddingtop20"></li>
+</ul>
 <li>
           
-            <li>
-    <ul class="subnav">
-    <li><span>Overview</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-whatis/">What is Azure RemoteApp?</a>
-        
+            <li><ul class="subnav">
+    <li class="">
+        <a class=""  id="Overview" style="font-size:95%;font-weight:bold;">Overview</a>
     </li>
-
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-whatis/" id="What is Azure RemoteApp?">What is Azure RemoteApp? </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-licensing/">How does licensing work?</a>
+        <div style="display:none" id="hidden_What is Azure RemoteApp?">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-licensing/" id="How does licensing work?">How does licensing work? </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-faq/">FAQ</a>
+        <div style="display:none" id="hidden_How does licensing work?">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-faq/" id="FAQ">FAQ </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-whatsnew/">What's new?</a>
+        <div style="display:none" id="hidden_FAQ">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-whatsnew/" id="What's new?">What's new? </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-roadmap/">What's coming?</a>
+        <div style="display:none" id="hidden_What's new?">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-roadmap/" id="What's coming?">What's coming? </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../azure-subscription-service-limits/">Azure service limits</a>
+        <div style="display:none" id="hidden_What's coming?">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../azure-subscription-service-limits/" id="Azure service limits">Azure service limits </a>
+        </li>
         
-    </ul>
+        <div style="display:none" id="hidden_Azure service limits">
+        
+        </div>
+    
+    <li class="paddingtop20"></li>
+</ul>
 <li>
           
-            <li>
-    <ul class="subnav">
-    <li><span>Real world scenarios</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-anyapp/">Run any app on any device</a>
-        
+            <li><ul class="subnav">
+    <li class="">
+        <a class=""  id="Real world scenarios" style="font-size:95%;font-weight:bold;">Real world scenarios</a>
     </li>
-
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-anyapp/" id="Run any app on any device">Run any app on any device </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-tutorial-o365anywhere/">Run Office 365 on any device</a>
+        <div style="display:none" id="hidden_Run any app on any device">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-tutorial-o365anywhere/" id="Run Office 365 on any device">Run Office 365 on any device </a>
+        </li>
         
-    </ul>
+        <div style="display:none" id="hidden_Run Office 365 on any device">
+        
+        </div>
+    
+    <li class="paddingtop20"></li>
+</ul>
 <li>
           
-            <li>
-    <ul class="subnav">
-    <li><span>Will my app work?</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-appreqs/">App requirements</a>
-        
+            <li><ul class="subnav">
+    <li class="">
+        <a class=""  id="Will my app work?" style="font-size:95%;font-weight:bold;">Will my app work?</a>
     </li>
-
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-appreqs/" id="App requirements">App requirements </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-onedrive/">OneDrive for Business</a>
+        <div style="display:none" id="hidden_App requirements">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-onedrive/" id="OneDrive for Business">OneDrive for Business </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-sql/">SQL Azure</a>
+        <div style="display:none" id="hidden_OneDrive for Business">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-sql/" id="SQL Azure">SQL Azure </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-o365/">Office 365</a>
+        <div style="display:none" id="hidden_SQL Azure">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-o365/" id="Office 365">Office 365 </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-outlook/">Outlook 2013</a>
+        <div style="display:none" id="hidden_Office 365">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-outlook/" id="Outlook 2013">Outlook 2013 </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-appv/">Using App-V apps</a>
+        <div style="display:none" id="hidden_Outlook 2013">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-appv/" id="Using App-V apps">Using App-V apps </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-quickbooks/">QuickBooks on Azure RemoteApp</a>
+        <div style="display:none" id="hidden_Using App-V apps">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-quickbooks/" id="QuickBooks on Azure RemoteApp">QuickBooks on Azure RemoteApp </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-secure/">Secure apps and resources</a>
+        <div style="display:none" id="hidden_QuickBooks on Azure RemoteApp">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-secure/" id="Secure apps and resources">Secure apps and resources </a>
+        </li>
         
-    </ul>
+        <div style="display:none" id="hidden_Secure apps and resources">
+        
+        </div>
+    
+    <li class="paddingtop20"></li>
+</ul>
 <li>
           
-            <li>
-    <ul class="subnav">
-    <li><span>Create a RemoteApp collection</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-collections/">Which collection do you need?</a>
-        
+            <li><ul class="subnav">
+    <li class="current">
+        <a class="current"  id="Create a RemoteApp collection" style="font-size:95%;font-weight:bold;">Create a RemoteApp collection</a>
     </li>
-
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-collections/" id="Which collection do you need?">Which collection do you need? </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-create-cloud-deployment/">Create a cloud collection</a>
+        <div style="display:none" id="hidden_Which collection do you need?">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-create-cloud-deployment/" id="Create a cloud collection">Create a cloud collection </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-create-hybrid-deployment/">Create a hybrid collection</a>
+        <div style="display:none" id="hidden_Create a cloud collection">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-create-hybrid-deployment/" id="Create a hybrid collection">Create a hybrid collection </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-update/">Update your collection</a>
+        <div style="display:none" id="hidden_Create a hybrid collection">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-update/" id="Update your collection">Update your collection </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-imageoptions/">Create a RemoteApp image</a>
+        <div style="display:none" id="hidden_Update your collection">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-imageoptions/" id="Create a RemoteApp image">Create a RemoteApp image </a>
+        </li>
         
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">What is in the template image?</a>
+        <div style="display:none" id="hidden_Create a RemoteApp image">
         
-            <ul>
-            
-                <li class="toctree-l3"><a href="#what-is-in-the-azure-remoteapp-template-images">What is in the Azure RemoteApp template images?</a></li>
-                
-                    <li><a class="toctree-l4" href="#windows-server-2012-r2-the-vanilla-image">Windows Server 2012 R2  ("the vanilla image")</a></li>
-                
-                    <li><a class="toctree-l4" href="#microsoft-office-365-proplus-subscription-required">Microsoft Office 365 ProPlus (subscription required)</a></li>
-                
-                    <li><a class="toctree-l4" href="#microsoft-office-2013-professional-plus-trial-only">Microsoft Office 2013 Professional Plus (trial only)</a></li>
-                
-            
-            </ul>
+        </div>
+    
+        <li class="current">
+            <a style="padding-left:50px;" class="current" href="./" id="What is in the template image?">What is in the template image? </a>
+        </li>
         
-    </li>
-
+        <div style="display:none" id="hidden_What is in the template image?">
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-imagereqs/">Image requirements</a>
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-imagereqs/" id="Image requirements">Image requirements </a>
+        </li>
         
-    </li>
-
+        <div style="display:none" id="hidden_Image requirements">
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-uploadimage/">Upload an image</a>
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-uploadimage/" id="Upload an image">Upload an image </a>
+        </li>
         
-    </li>
-
+        <div style="display:none" id="hidden_Upload an image">
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-image-on-azurevm/">Create an image from an Azure VM</a>
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-image-on-azurevm/" id="Create an image from an Azure VM">Create an image from an Azure VM </a>
+        </li>
         
-    </li>
-
+        <div style="display:none" id="hidden_Create an image from an Azure VM">
         
-    </ul>
+        </div>
+    
+    <li class="paddingtop20"></li>
+</ul>
 <li>
           
-            <li>
-    <ul class="subnav">
-    <li><span>Configure a Virtual Network</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-planvnet/">Plan your VNET</a>
-        
+            <li><ul class="subnav">
+    <li class="">
+        <a class=""  id="Configure a Virtual Network" style="font-size:95%;font-weight:bold;">Configure a Virtual Network</a>
     </li>
-
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-planvnet/" id="Plan your VNET">Plan your VNET </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-ports/">Port and URL info</a>
+        <div style="display:none" id="hidden_Plan your VNET">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-ports/" id="Port and URL info">Port and URL info </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-vnet/">Validate your VNET</a>
+        <div style="display:none" id="hidden_Port and URL info">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-vnet/" id="Validate your VNET">Validate your VNET </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-migrate/">Migrate to an Azure VNET</a>
+        <div style="display:none" id="hidden_Validate your VNET">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-migrate/" id="Migrate to an Azure VNET">Migrate to an Azure VNET </a>
+        </li>
         
-    </ul>
+        <div style="display:none" id="hidden_Migrate to an Azure VNET">
+        
+        </div>
+    
+    <li class="paddingtop20"></li>
+</ul>
 <li>
           
-            <li>
-    <ul class="subnav">
-    <li><span>Publish applications</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-publish/">How to publish an app</a>
-        
+            <li><ul class="subnav">
+    <li class="">
+        <a class=""  id="Publish applications" style="font-size:95%;font-weight:bold;">Publish applications</a>
     </li>
-
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-publish/" id="How to publish an app">How to publish an app </a>
+        </li>
         
-    </ul>
+        <div style="display:none" id="hidden_How to publish an app">
+        
+        </div>
+    
+    <li class="paddingtop20"></li>
+</ul>
 <li>
           
-            <li>
-    <ul class="subnav">
-    <li><span>Manage Users</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-user/">How to add users</a>
-        
+            <li><ul class="subnav">
+    <li class="">
+        <a class=""  id="Manage Users" style="font-size:95%;font-weight:bold;">Manage Users</a>
     </li>
-
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-user/" id="How to add users">How to add users </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-ad/">Configure Active Directory</a>
+        <div style="display:none" id="hidden_How to add users">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-ad/" id="Configure Active Directory">Configure Active Directory </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-changetenant/">Change the Azure AD tenant</a>
+        <div style="display:none" id="hidden_Configure Active Directory">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-changetenant/" id="Change the Azure AD tenant">Change the Azure AD tenant </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-o365user/">Office 365 user accounts</a>
+        <div style="display:none" id="hidden_Change the Azure AD tenant">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-o365user/" id="Office 365 user accounts">Office 365 user accounts </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-secureaccess/">Secure Data</a>
+        <div style="display:none" id="hidden_Office 365 user accounts">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-secureaccess/" id="Secure Data">Secure Data </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-upd/">User data</a>
+        <div style="display:none" id="hidden_Secure Data">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-upd/" id="User data">User data </a>
+        </li>
         
-    </ul>
+        <div style="display:none" id="hidden_User data">
+        
+        </div>
+    
+    <li class="paddingtop20"></li>
+</ul>
 <li>
           
-            <li>
-    <ul class="subnav">
-    <li><span>Client experience</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-clients/">Supported clients</a>
-        
+            <li><ul class="subnav">
+    <li class="">
+        <a class=""  id="Client experience" style="font-size:95%;font-weight:bold;">Client experience</a>
     </li>
-
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-clients/" id="Supported clients">Supported clients </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-redirection/">Configure redirection</a>
+        <div style="display:none" id="hidden_Supported clients">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-redirection/" id="Configure redirection">Configure redirection </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-bestpractices/">Client best practices</a>
+        <div style="display:none" id="hidden_Configure redirection">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-bestpractices/" id="Client best practices">Client best practices </a>
+        </li>
         
-    </ul>
+        <div style="display:none" id="hidden_Client best practices">
+        
+        </div>
+    
+    <li class="paddingtop20"></li>
+</ul>
 <li>
           
-            <li>
-    <ul class="subnav">
-    <li><span>Automate RemoteApp</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-tutorial-arawithpowershell/">RemoteApp PowerShell cmdlets</a>
-        
+            <li><ul class="subnav">
+    <li class="">
+        <a class=""  id="Automate RemoteApp" style="font-size:95%;font-weight:bold;">Automate RemoteApp</a>
     </li>
-
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-tutorial-arawithpowershell/" id="RemoteApp PowerShell cmdlets">RemoteApp PowerShell cmdlets </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../automation-manage-remote-app/">Manage RemoteApp with Azure Automation</a>
+        <div style="display:none" id="hidden_RemoteApp PowerShell cmdlets">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../automation-manage-remote-app/" id="Manage RemoteApp with Azure Automation">Manage RemoteApp with Azure Automation </a>
+        </li>
         
-    </ul>
+        <div style="display:none" id="hidden_Manage RemoteApp with Azure Automation">
+        
+        </div>
+    
+    <li class="paddingtop20"></li>
+</ul>
 <li>
           
-            <li>
-    <ul class="subnav">
-    <li><span>Troubleshoot</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-hybridtrouble/">Troubleshoot a hybrid collection</a>
-        
+            <li><ul class="subnav">
+    <li class="">
+        <a class=""  id="Troubleshoot" style="font-size:95%;font-weight:bold;">Troubleshoot</a>
     </li>
-
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-hybridtrouble/" id="Troubleshoot a hybrid collection">Troubleshoot a hybrid collection </a>
+        </li>
         
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../remoteapp-cloudtrouble/">Troubleshoot a cloud collection</a>
+        <div style="display:none" id="hidden_Troubleshoot a hybrid collection">
         
-    </li>
-
+        </div>
+    
+        <li class="">
+            <a style="padding-left:50px;" class="" href="../remoteapp-cloudtrouble/" id="Troubleshoot a cloud collection">Troubleshoot a cloud collection </a>
+        </li>
         
-    </ul>
+        <div style="display:none" id="hidden_Troubleshoot a cloud collection">
+        
+        </div>
+    
+    <li class="paddingtop20"></li>
+</ul>
 <li>
           
         </ul>
@@ -471,7 +536,7 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+         <!-- <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="..">Docs</a> &raquo;</li>
     
@@ -487,10 +552,10 @@
     </li>
   </ul>
   <hr/>
-</div>
+</div> -->
           <div role="main">
             <div class="section">
-              
+             
                 <p><properties
     pageTitle="What is in the Azure RemoteApp template images? | Microsoft Azure"
     description="Learn about the template images included with Azure RemoteApp."
@@ -588,30 +653,10 @@ Azure RemoteApp is being discontinued. Read the <a href="https://go.microsoft.co
 <p>[AZURE.IMPORTANT]<strong>Legal information:</strong> This image does not include a Microsoft Office license and <em>cannot be used for production</em>. The Office 2013 Professional Plus image is intended for trial use only. If you want to use Office apps in Azure RemoteApp for production, you need to use the Office 365 ProPlus image. For more details on licensing Office, see <a href="../remoteapp-o365/">Using Office 365 with Azure RemoteApp</a></p>
 </blockquote>
               
+               
             </div>
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../remoteapp-imagereqs/" class="btn btn-neutral float-right" title="Image requirements">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../remoteapp-imageoptions/" class="btn btn-neutral" title="Create a RemoteApp image"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
 
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-	  
         </div>
       </div>
 
@@ -619,17 +664,26 @@ Azure RemoteApp is being discontinued. Read the <a href="https://go.microsoft.co
 
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+<!--<div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../remoteapp-imageoptions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span class="prev"><a href="../remoteapp-imageoptions/"><i class="fa fa-angle-left"></i> Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../remoteapp-imagereqs/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span class="next"><a href="../remoteapp-imagereqs/">Next <i class="fa fa-angle-right"></i></a></span>
       
     </span>
-</div>
+	<div class="footer-right">
+		<ul class="social-links">
+			<li class="list-inline"><a href="https://twitter.com/citrix"><i class="fa fa-twitter"></i>@citrix</a></li>
+			<li class="list-inline"><a href="mailto:support@citrix.com"><i class="fa fa-envelope-o"></i>support@citrix.com</a></li>
+		</ul>
+		<ul class="inner-pages">
+			<li class="list-inline"><a href="http://citrix.com/about/legal">Privacy and Terms</li>
+		</ul>
+	</div>
+</div>-->
 
 </body>
 </html>
