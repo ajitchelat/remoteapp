@@ -1,6 +1,6 @@
 site_name: Azure RemoteApp
 site_description: Documentation for Azure RemoteApp
-theme: readthedocs
+theme: test_theme
 markdown_extensions:
  - admonition
 
