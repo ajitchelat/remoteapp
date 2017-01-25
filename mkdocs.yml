@@ -5,7 +5,7 @@ markdown_extensions:
  - admonition
 
 pages:
-- Index 2: 'index.md'
+- Index 32: 'index.md'
 - Overview:
     - What is Azure RemoteApp?: 'remoteapp-whatis.md'
     - How does licensing work?: 'remoteapp-licensing.md'
