@@ -1,4 +1,4 @@
-#Azure RemoteApp Documentation version 2
+#Azure RemoteApp Documentation version 4.0
 
 This site contains documentation for Azure RemoteApp. This documentation has been built using the source files forked from the Azure content repository on GitHub. Click [here](https://github.com/Azure/azure-content.git) to view the repository on GitHub. 
 
