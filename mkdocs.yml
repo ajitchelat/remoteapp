@@ -4,6 +4,10 @@ theme_dir: theme
 markdown_extensions:
  - admonition
 
+extra_javascript:
+- js/extra.js
+
+
 pages:
 - Home: 'index.md'
 - Overview:
@@ -59,4 +63,3 @@ pages:
 - Troubleshoot:
     - Troubleshoot a hybrid collection: 'remoteapp-hybridtrouble.md'
     - Troubleshoot a cloud collection: 'remoteapp-cloudtrouble.md'
-   
